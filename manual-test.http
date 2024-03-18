@@ -1,0 +1,94 @@
+###Register User
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username" : "ichwan",
+    "password" : "ichwan1212",
+    "name": "ichwan"
+}
+### Login
+POST http://localhost:3000/api/users/login 
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username" : "ichwan",
+    "password" : "ichwan1212"
+}
+
+### Get Data
+GET http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+X-API-TOKEN : fcd201e0-95df-4e57-bd56-e15e1cac1ec0
+
+### Logout 
+DELETE http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+X-API-TOKEN : 2a31c8f2-e69a-424f-b57d-0c07fa2cdf5a
+
+### 
+PATCH  http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+X-API-TOKEN : fcd201e0-95df-4e57-bd56-e15e1cac1ec0
+
+{
+    "name" : "RM.IchwanTumenggung"
+}
+
+
+### Create Contact
+POST  http://localhost:3000/api/contacts
+Content-Type: application/json
+Accept: application/json
+X-API-TOKEN : fcd201e0-95df-4e57-bd56-e15e1cac1ec0
+
+{
+    "first_name" : "Dono",
+    "last_name": "wenas",
+    "email": "dono@gmail.com",
+    "phone": "0823445611432"
+}
+
+### Get Contacts
+GET  http://localhost:3000/api/contacts/331
+Content-Type: application/json
+Accept: application/json
+X-API-TOKEN : fcd201e0-95df-4e57-bd56-e15e1cac1ec0
+
+
+### 
+PUT   http://localhost:3000/api/contacts/330
+Content-Type: application/json
+Accept: application/json
+X-API-TOKEN : fcd201e0-95df-4e57-bd56-e15e1cac1ec0
+
+{
+    "first_name" : "joni"
+}
+
+### delete
+DELETE  http://localhost:3000/api/contacts/329
+Content-Type: application/json
+Accept: application/json
+X-API-TOKEN : fcd201e0-95df-4e57-bd56-e15e1cac1ec0
+
+### Search 
+GET  http://localhost:3000/api/contacts
+Content-Type: application/json
+Accept: application/json
+X-API-TOKEN : fcd201e0-95df-4e57-bd56-e15e1cac1ec0
+
+{
+    "email" : "in"
+}
+
+
+
+
+
+
