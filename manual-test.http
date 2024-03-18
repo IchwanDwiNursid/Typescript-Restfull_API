@@ -48,9 +48,9 @@ Accept: application/json
 X-API-TOKEN : fcd201e0-95df-4e57-bd56-e15e1cac1ec0
 
 {
-    "first_name" : "Dono",
-    "last_name": "wenas",
-    "email": "dono@gmail.com",
+    "first_name" : "jaya",
+    "last_name": "guna",
+    "email": "jaya@gmail.com",
     "phone": "0823445611432"
 }
 
@@ -83,9 +83,45 @@ Content-Type: application/json
 Accept: application/json
 X-API-TOKEN : fcd201e0-95df-4e57-bd56-e15e1cac1ec0
 
+
+### create Address
+POST  http://localhost:3000/api/contacts/330/addresses
+Content-Type: application/json
+Accept: application/json
+X-API-TOKEN : fcd201e0-95df-4e57-bd56-e15e1cac1ec0
+
 {
-    "email" : "in"
+    "country" : "australia",
+    "postal_code" : "23453"
 }
+
+### GET addresses
+
+GET  http://localhost:3000/api/contacts/330/addresses
+Content-Type: application/json
+Accept: application/json
+X-API-TOKEN : fcd201e0-95df-4e57-bd56-e15e1cac1ec0
+
+### UPDATE Data
+PUT  http://localhost:3000/api/contacts/330/addresses/60
+Content-Type: application/json
+Accept: application/json
+X-API-TOKEN : fcd201e0-95df-4e57-bd56-e15e1cac1ec0
+
+{
+    "street" : "Jl.imam Bonjol",
+    "city": "Jakarta",
+    "province" : "Central Java",
+    "country" : "indonesi",
+    "postal_code" : "324435"
+
+}
+
+
+
+
+
+
 
 
 
