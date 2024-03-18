@@ -1,0 +1,5 @@
+database.sql
+manual-test.http
+/dist
+/coverage
+/node_modules
