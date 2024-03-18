@@ -18,3 +18,5 @@ npm run build
 
 npm run start
 ```
+
+THANKS Ichwan Dwi Nursid -----> https://ichwandwinursid.github.io/portfolio
